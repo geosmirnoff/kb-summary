@@ -1,5 +1,5 @@
-kanboardapipath = 'http://172.16.2.106/jsonrpc.php'
-kanboardtoken = 'f0e3238ce207dfa020471ea50baa7dafd6dc5fff34f1bb3afd1d06fe867f'
+kanboardapipath = ''
+kanboardtoken = ''
 
 import logging
 import requests
