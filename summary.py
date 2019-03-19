@@ -1,5 +1,5 @@
-kanboardapipath = ''
-kanboardtoken = ''
+kanboardapipath = 'kanboardapipath'
+kanboardtoken = 'kanboardtoken'
 
 import logging
 import requests
