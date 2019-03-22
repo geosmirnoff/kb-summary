@@ -61,7 +61,7 @@ def count(tsk, col, c, id_col):
 
 
 def message(c, out, m=''):
-    link = 'http://kanboard.nordsy.spb.ru/project/16/task/'
+    link = 'http://[kb-url]/project/16/task/'
     if len(c) > 0:
         m += '<p>' + out + ': ' + str(len(c)) + ' ['
         for item in c:
@@ -71,12 +71,12 @@ def message(c, out, m=''):
 
 
 if __name__ == '__main__':
-    r = requests.get('http://172.16.2.106/jsonrpc.php')
+    r = requests.get('http://[ip]/jsonrpc.php')
     print(r)
 
     stamp = int(datetime.today().timestamp())
-    #today = str(datetime.utcfromtimestamp(stamp).strftime('%Y-%m-%d'))
-    today = '2019-02-08'
+    today = str(datetime.utcfromtimestamp(stamp).strftime('%Y-%m-%d'))
+    #today = '2019-02-08'
 
     kb = Kanboard(kanboardapipath, "jsonrpc", kanboardtoken)
 
